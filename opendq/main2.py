@@ -1,5 +1,6 @@
 import sys
-from PyQt6.QtWidgets import QApplication, QWidget, QLabel, QPushButton, QLineEdit, QVBoxLayout, QRadioButton, QButtonGroup
+from PyQt6.QtWidgets import (QApplication, QWidget, QLabel, QPushButton, QLineEdit, 
+                             QVBoxLayout, QRadioButton, QButtonGroup, QStackedLayout)
 from PyQt6.QtCore import Qt
 
 
@@ -7,6 +8,8 @@ class MainWindow(QWidget):
 
     def __init__(self):
         super().__init__()
+        self.screen1 = QWidget()
+        self.screen2 = QWidget()
         self.initializeUI()
 
     def initializeUI(self): 
